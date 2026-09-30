@@ -1,0 +1,20 @@
+<!-- Eksempel på simpel fejlmeddelelse -->
+<!-- Bjørn Christensen, 25/9-2026      -->
+
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Error</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+    <div>
+        <h1>Fejl</h1>
+        <p th:text="${message}"></p>
+        <form th:action="@{/}" method="get">
+            <button type="submit">Back</button>
+        </form>
+    </div>
+</body>
+</html>
